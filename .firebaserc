@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "expenses-app-2024": {
+      "hosting": {
+        "expenses-app-2024": [
+          "expenses-app-2024"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "expenses-app-2024"
+  }
+}

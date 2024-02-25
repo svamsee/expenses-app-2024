@@ -103,6 +103,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "expenses-app-2024:build:production",
+              "serveTarget": "expenses-app-2024:serve:production"
+            },
+            "development": {
+              "buildTarget": "expenses-app-2024:build:development",
+              "serveTarget": "expenses-app-2024:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

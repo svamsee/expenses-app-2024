@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "expenses-app-2024",
+      "source": "expenses-app-2024",
+      "frameworksBackend": {}
+    }
+  ]
+}
