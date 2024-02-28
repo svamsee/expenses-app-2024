@@ -1,9 +1,10 @@
 {
-  "hosting": [
-    {
-      "target": "expenses-app-2024",
-      "source": "expenses-app-2024",
-      "frameworksBackend": {}
-    }
-  ]
+  "hosting": {
+    "public": "dist\\expenses-app-2024\\browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
 }
