@@ -1,0 +1,29 @@
+.login-card {
+  width: 400px;
+  margin: 40px;
+  pre {
+    display: block;
+    overflow: auto;
+  }
+}
+
+.login-header-image {
+  background-size: cover;
+  img {
+    border-radius: 40px;
+    display: block;
+  }
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 218px);
+  height: calc(100vh - 65px);
+  overflow: hidden;
+  background-color: #f1f1f1;
+}

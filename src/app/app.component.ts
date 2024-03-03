@@ -5,7 +5,9 @@ import {
   signInWithPopup,
   user,
   signOut,
+  User,
 } from '@angular/fire/auth';
+import { Observable, map } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -13,12 +15,5 @@ import {
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  private auth: Auth = inject(Auth);
-  user$ = user(this.auth);
-  loginWithGoogle() {
-    signInWithPopup(this.auth, new GoogleAuthProvider());
-  }
-  logout() {
-    signOut(this.auth);
-  }
+
 }
