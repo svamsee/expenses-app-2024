@@ -1,0 +1,8 @@
+<h4 class="p-3 border-bottom fw-bold text-muted">MANAGE-BANK-ACCOUNTS</h4>
+
+<ul class="list-group mx-2" *ngIf="bankAccounts$ | async as bankAccounts">
+  <li class="list-group-item py-3" *ngFor="let item of bankAccounts">
+    <pre>{{ item | json }}</pre>
+    <button (click)="deleteItem(item.id || '')">Delete</button>
+  </li>
+</ul>
