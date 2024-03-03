@@ -1,33 +1,6 @@
-<!-- prettier-ignore -->
-<ng-container *ngIf="user$ | async as userDetails">
-  <ng-container *ngIf="userDetails.isLogin">
-    <mat-card class="login-card" *ngIf="userDetails.user as user">
-      <mat-card-header class="border-bottom mb-2">
-        <div mat-card-avatar class="login-header-image">
-          <img [src]="user.photoURL" width="40" height="40" />
-        </div>
-        <mat-card-title>{{ user.displayName }}</mat-card-title>
-        <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <div class="list-group" role="button">
-          <div class="list-group-item mb-2 border rounded-0 py-2 shadow-sm"><b>Uid</b> : {{ user.uid }}</div>
-          <div class="list-group-item mb-2 border rounded-0 py-2 shadow-sm"><b>Email</b> : {{ user.email }}</div>
-          <div class="list-group-item mb-2 border rounded-0 py-2 shadow-sm"><b>Email Verified</b> : {{ user.emailVerified }}</div >
-          <div class="list-group-item mb-2 border rounded-0 py-2 shadow-sm"><b>Display Name</b> : {{ user.displayName }}</div>
-          <div class="list-group-item mb-2 border rounded-0 py-2 shadow-sm"><b>Is Anonymous</b> : {{ user.isAnonymous }}</div>
-        </div>
-      </mat-card-content>
-      <mat-card-actions align="end">
-        <button mat-raised-button (click)="logout()">LOGOUT</button>
-      </mat-card-actions>
-    </mat-card>
-  </ng-container>
-  <ng-container *ngIf="!userDetails.isLogin">
-    <button (click)="loginWithGoogle()" mat-raised-button color="warn">
-      Login Google
-    </button>
-  </ng-container>
-</ng-container>
 
-<router-outlet />
+
+<app-navigation-menu>
+  <router-outlet />
+</app-navigation-menu>
+

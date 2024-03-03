@@ -8,8 +8,13 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { SharedModule } from './shared.module';
+import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { IncomeComponent } from './income/income.component';
+import { ExpensesComponent } from './expenses/expenses.component';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavigationMenuComponent, LoginComponent, DashboardComponent, IncomeComponent, ExpensesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
