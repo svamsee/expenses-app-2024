@@ -13,8 +13,9 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { IncomeComponent } from './income/income.component';
 import { ExpensesComponent } from './expenses/expenses.component';
+import { ManageBankAccountsComponent } from './manage-bank-accounts/manage-bank-accounts.component';
 @NgModule({
-  declarations: [AppComponent, NavigationMenuComponent, LoginComponent, DashboardComponent, IncomeComponent, ExpensesComponent],
+  declarations: [AppComponent, NavigationMenuComponent, LoginComponent, DashboardComponent, IncomeComponent, ExpensesComponent, ManageBankAccountsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
